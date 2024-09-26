@@ -14,3 +14,5 @@ class Mission(Base):
 
     target_priority = Column(String(100))
     target_type = Column(String(255))
+
+

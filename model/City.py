@@ -10,3 +10,5 @@ class City(Base):
     city_name = Column(String(100), nullable=False,)
     country_id = Column(Integer, ForeignKey("country.country_id"))
     country = relationship("Country", back_populates="cities")
+
+    positions = relationship("Position", back_populates="city")
