@@ -1,5 +1,3 @@
-
-
 EXPLAIN ANALYZE SELECT DISTINCT ON (target_city) target_city, air_force, c
 FROM (
     SELECT target_city, air_force, COUNT(air_force) AS c
