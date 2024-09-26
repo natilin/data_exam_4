@@ -3,7 +3,6 @@ from sqlalchemy.orm import relationship
 from config.base import Base
 
 
-
 class Position(Base):
     __tablename__ = "position"
     position_id = Column(Integer, primary_key=True, autoincrement=True, )

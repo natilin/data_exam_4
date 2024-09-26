@@ -3,7 +3,6 @@ from sqlalchemy.orm import relationship
 from config.base import Base
 
 
-
 class Industry(Base):
     __tablename__ = "industry"
     industry_id = Column(Integer, primary_key=True, autoincrement=True)

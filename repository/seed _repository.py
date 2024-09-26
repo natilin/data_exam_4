@@ -1,5 +1,6 @@
 from config.base import session_factory
 from sqlalchemy import text
+from mission_repository import get_all_missions
 
 
 def create_tables():
@@ -100,3 +101,13 @@ def insert_data():
                 and c.city_id = p.city_id
                  """))
         session.commit()
+
+
+def seed():
+    create_tables()
+    if not is_filled():
+        insert_data()
+
+
+def is_filled():
+    return get_all_missions() != 0

@@ -3,7 +3,6 @@ from sqlalchemy.orm import relationship
 from config.base import Base
 
 
-
 class City(Base):
     __tablename__ = "city"
     city_id = Column(Integer, primary_key=True, autoincrement=True)
